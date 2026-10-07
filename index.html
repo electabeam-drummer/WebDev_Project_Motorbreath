@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <nav>
-        <h4><a href="index.html">Home</a></h4>
-        <h4><a href="about.html">About</a></h4>
-        <h4><a href="">Customer Hub</a></h4>
-        <h4><a href="">Login</a></h4>
-    </nav>
+    <div class="navbar">
+        <h4><a class="one" href="index.html">Home</a></h4>
+        <h4><a class="one" href="about.html">About</a></h4>
+        <h4><a class="one" href="">Customer Hub</a></h4>
+        <h4><a class="one" href="">Login</a></h4>
+    </div>
 
-    <input style="text-align: center;"type="text" placeholder="Search..">
+    <input style="text-align: center;"type="text" placeholder="Search...">
 
-    <select name="cars" id="cars" style="margin:auto">
+
+    <img class="main-content-wrapper" src="images/Skoda_CarOfTheWeek.jpg" alt="SkodaWhatever">
+
+    <select class="drop" name="cars" id="cars">
         <option value="Week">Vehicle of the Week</option>
         <option value="Month">Vehicle of the Month</option>
         <option value="Year">Vehicle of the Year</option>
     </select>
 
-    <img src="images/Skoda_CarOfTheWeek.jpg" style= "display: block; max-height: 500px; max-width: 400px; margin: auto; width: 50%; border-radius: 8px;" alt="SkodaWhatever">
-
     <address style="text-align:center ;">
         <p>Photo by Martin Katler on <a href="">Unsplash</a></p>
     </address>
     
-    <div style="text-align:center ;">
+    <div class="car-info">
         <p><b>Brand:</b> Skoda</p>
         <p><b>Model:</b> Superb Combi</p>
         <p><b>Year:</b> 2015</p>

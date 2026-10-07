@@ -1,0 +1,63 @@
+
+.title {
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+.navbar {
+    align-items: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+    background-color: black;
+    padding: 15px 0;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+a.one:link, a.one:visited {
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+
+a.one:hover {
+    background-color: yellow;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.main-content-wrapper {
+    max-width: 500px;  /*Maximum width of the contents*/
+    margin: 0 auto;     /* Center of the content horizontally */
+    padding: 20px;      /* Creates space around content */
+    background-color: white;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*shadow for the card*/
+    border-radius: 10px; /*circular corners*/
+    overflow: hidden; /*hide everything coming breaching the corners*/
+    display: block; /*Ensures the wrapper behaves like a block-level element */
+}
+
+.drop {
+    display: block;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+.car-info {
+    text-align: center;
+    background-color: rgb(185, 185, 185);
+    margin: 50px auto;
+    padding: 20px;
+    outline: 1px solid black;
+    width: 50%;
+}
+

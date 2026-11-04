@@ -1,5 +1,6 @@
 .imagebackground {
-    background-image: url('/images/background.jpg');
+    background-image: url('https://t3.ftcdn.net/jpg/09/26/26/06/360_F_926260609_e8QS1OeQznCoj3JnE167VdAJu3pvzscg.jpg');
+    background-size: cover;
 }
 .title {
     text-align:center;

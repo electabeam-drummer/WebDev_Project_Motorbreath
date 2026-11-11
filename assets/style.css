@@ -1,8 +1,14 @@
 .imagebackground {
-    background-image: url('https://t3.ftcdn.net/jpg/09/26/26/06/360_F_926260609_e8QS1OeQznCoj3JnE167VdAJu3pvzscg.jpg');
+    background-image: url('https://t4.ftcdn.net/jpg/03/04/23/95/360_F_304239563_w8FOe3dMV9wgzxF9kGqGqIYpSfkljovW.jpg');
     background-size: cover;
 }
 .title {
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+.heading {
     text-align:center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;

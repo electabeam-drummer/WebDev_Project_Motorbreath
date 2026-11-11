@@ -1,6 +1,17 @@
-.imagebackground {
+body {
     background-image: url('https://t4.ftcdn.net/jpg/03/04/23/95/360_F_304239563_w8FOe3dMV9wgzxF9kGqGqIYpSfkljovW.jpg');
     background-size: cover;
+
+    .dark-mode {
+        background-image: url('https://t4.ftcdn.net/jpg/00/64/98/35/360_F_64983578_8UlqOHsaQCMvlIA9coiTEfZQlqOUVwzT.jpg');
+        background-size: cover;
+}
+
+    .light-mode {
+        background-image: url('https://t4.ftcdn.net/jpg/03/04/23/95/360_F_304239563_w8FOe3dMV9wgzxF9kGqGqIYpSfkljovW.jpg');
+        background-size: cover;
+    }
+    
 }
 .title {
     text-align:center;

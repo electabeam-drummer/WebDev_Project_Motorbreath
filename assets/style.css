@@ -19,6 +19,30 @@ body {
     color: black;
 }
 
+.address {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-decoration: underline;
+    font-size: 30px;
+
+    .dark-mode {
+        text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+    }
+
+    .light-mode {
+        text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    text-decoration: underline;
+    font-size: 30px;
+    }
+}
+
 .heading {
     text-align:center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

@@ -70,3 +70,7 @@ a.one:hover {
     width: 50%;
 }
 
+.dark-mode {
+    background-image: url('https://t4.ftcdn.net/jpg/00/64/98/35/360_F_64983578_8UlqOHsaQCMvlIA9coiTEfZQlqOUVwzT.jpg');
+    background-size: cover;
+}

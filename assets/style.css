@@ -17,17 +17,23 @@ body {
     text-align:center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
+    background-color: white;
+    margin: 10px auto;
+    padding: 5px;
+    outline: 1px solid black;
+    width: 10%;
 }
 
 .address {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    text-decoration: underline;
-    font-size: 30px;
+    font-size: 15px;
     background-color: white;
-    border: white;
-    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px;
+    outline: 1px solid black;
+    width: 10%;
 }
 
 .heading {

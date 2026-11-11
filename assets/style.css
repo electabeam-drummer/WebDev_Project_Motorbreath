@@ -26,7 +26,7 @@ body {
     text-decoration: underline;
     font-size: 30px;
 
-    .dark-mode {
+    .dark-modeText {
         text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -34,7 +34,7 @@ body {
     font-size: 30px;
     }
 
-    .light-mode {
+    .light-modeText {
         text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: black;

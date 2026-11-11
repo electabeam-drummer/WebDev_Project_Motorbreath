@@ -51,8 +51,10 @@ body {
     margin-top: 0;
     background-color: black;
     padding: 15px 0;
+    outline: 1px solid white;
     position: sticky; 
     top: 0; 
+
     z-index: 1000; 
 }
 

@@ -25,22 +25,9 @@ body {
     color: black;
     text-decoration: underline;
     font-size: 30px;
-
-    .dark-modeText {
-        text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    text-decoration: underline;
-    font-size: 30px;
-    }
-
-    .light-modeText {
-        text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    text-decoration: underline;
-    font-size: 30px;
-    }
+    background-color: white;
+    border: white;
+    border-radius: 10px;
 }
 
 .heading {

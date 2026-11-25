@@ -1,106 +1,136 @@
+
+
 body {
+    min-width: 320px;
+    margin: 0;
     background-image: url('https://t4.ftcdn.net/jpg/03/04/23/95/360_F_304239563_w8FOe3dMV9wgzxF9kGqGqIYpSfkljovW.jpg');
     background-size: cover;
-
-    .dark-mode {
-        background-image: url('https://t4.ftcdn.net/jpg/00/64/98/35/360_F_64983578_8UlqOHsaQCMvlIA9coiTEfZQlqOUVwzT.jpg');
-        background-size: cover;  
 }
 
-    .light-mode {
-        background-image: url('https://t4.ftcdn.net/jpg/03/04/23/95/360_F_304239563_w8FOe3dMV9wgzxF9kGqGqIYpSfkljovW.jpg');
-        background-size: cover;
-    }
-    
+body.dark-mode {
+    background-image: url('https://t4.ftcdn.net/jpg/00/64/98/35/360_F_64983578_8UlqOHsaQCMvlIA9coiTEfZQlqOUVwzT.jpg');
+    background-size: cover;
 }
-.title {
-    text-align:center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
-    background-color: white;
+
+body.light-mode {
+    background-image: url('https://t4.ftcdn.net/jpg/03/04/23/95/360_F_304239563_w8FOe3dMV9wgzxF9kGqGqIYpSfkljovW.jpg');
+    background-size: cover;
+}
+
+.title, .address {
+    width: fit-content;
+    max-width: calc(100% - 2rem);
     margin: 30px auto;
     padding: 5px;
+    color: black;
+    text-align: center;
+    background-color: white;
     outline: 1px solid black;
-    width: 10%;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .address {
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    background-color: white;
-    margin: 30px auto;
-    padding: 5px;
-    outline: 1px solid black;
-    width: 10%;
 }
 
 .heading {
-    text-align:center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    text-align: center;
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem 1rem;
+    margin-top: 0;
+    padding: 0.75rem 1rem;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 0;
     background-color: black;
-    padding: 15px 0;
     outline: 1px solid white;
-    position: sticky; 
-    top: 0; 
+}
 
-    z-index: 1000; 
+.navbar h4 {
+    margin: 0;
 }
 
 a.one:link, a.one:visited {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
     color: white;
-    transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 a.one:hover {
-    background-color: yellow;
-    padding: 10px 15px;
-    border-radius: 5px;
     color: black;
     text-decoration: none;
+    background-color: yellow;
+}
+
+.navbar button {
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
 }
 
 .main-content-wrapper {
-    max-width: 500px;  /*Maximum width of the contents*/
-    margin: 0 auto;     /* Center of the content horizontally */
-    padding: 20px;      /* Creates space around content */
-    background-color: white;
+    display: block;
+    width: calc(100% - 2rem);
+    max-width: 540px;
+    height: auto;
+    margin: 1.5rem auto;
+    padding: 20px;
     color: #333;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*shadow for the card*/
-    border-radius: 10px; /*circular corners*/
-    overflow: hidden; /*hide everything coming breaching the corners*/
-    display: block; /*Ensures the wrapper behaves like a block-level element */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .drop {
     display: block;
-    padding: 15px;
+    max-width: calc(100% - 2rem);
     margin: 10px auto;
+    padding: 15px;
 }
 
 .car-info {
-    text-align: center;
-    background-color: rgb(185, 185, 185);
+    width: 50%;
+    max-width: 800px;
     margin: 50px auto;
     padding: 20px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: rgb(185, 185, 185);
     outline: 1px solid black;
-    width: 50%;
 }
 
-.dark-mode {
-    background-image: url('https://t4.ftcdn.net/jpg/00/64/98/35/360_F_64983578_8UlqOHsaQCMvlIA9coiTEfZQlqOUVwzT.jpg');
-    background-size: cover;
+@media only screen and (max-width: 900px) {
+    .car-info {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .car-info {
+        width: calc(100% - 2rem);
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+
+    .drop {
+        width: calc(100% - 2rem);
+    }
 }
